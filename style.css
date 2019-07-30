@@ -2,27 +2,42 @@
     font-family: BadMofo;
     src: url(fonts/BadMofo.ttf)
 }
+
+html {
+    height: 100%;
+}
+
 audio{
     display: none;
 }
 
 body{
     background: url(img/img-1.jpg);
-    background-repeat: repeat; 
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
+
 .h1-1{
     font-size: 80px;
     color: #FFFFFF;
     font-family: BadMofo,sans-serif;
     text-align: center;
 }
+
 .p1-1{
     font-size: 40px;
     color: #FFFFFF;
     font-family: BadMofo,sans-serif;
     text-align: center; 
 }
+
 .div-main{
     margin-top:150px;
-    background:#000000;
+    background: rgba(0,0,0,.6);
+    border-radius: 50px;
+    padding: 5px;
 }
