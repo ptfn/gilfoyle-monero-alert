@@ -10,17 +10,20 @@
     <audio src="baaah.mp3" controls id="audio-1"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <script>
-        $.ajax({
-            url: "https://api.cryptonator.com/api/ticker/xmr-usd",
-            success: function(data){
-                var change=data.ticker.change;
-                if (change<0){
-                    document.getElementById("audio-1").play();
-                    console.log(data);
+        function interval(){
+            $.ajax({
+                url: "https://api.cryptonator.com/api/ticker/xmr-usd",
+                success: function(data){
+                    var change=data.ticker.change;
+                    if (change<0){
+                        document.getElementById("audio-1").play();
+                        console.log(data);
+                    }    
                 }
-                
-            }
-        });
+            });
+        }
+
+        setInterval(interval(),60000);  
     </script>   
 </body>
 </html>
