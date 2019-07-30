@@ -1,6 +1,6 @@
 @font-face {
-    font-family: i8080;
-    src: url(fonts/i8080.ttf)
+    font-family: BadMofo;
+    src: url(fonts/BadMofo.ttf)
 }
 audio{
     display: none;
@@ -12,5 +12,5 @@ body{
 .h1-1{
     font-size: 40px;
     color: #FFFFFF;
-    font-family: i8080,sans-serif;
+    font-family: BadMofo,sans-serif;
 }
