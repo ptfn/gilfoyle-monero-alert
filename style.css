@@ -10,7 +10,17 @@ body{
     background:#000000; 
 }
 .h1-1{
+    font-size: 80px;
+    color: #FFFFFF;
+    font-family: BadMofo,sans-serif;
+    text-align: center;
+}
+.p1-1{
     font-size: 40px;
     color: #FFFFFF;
     font-family: BadMofo,sans-serif;
+    text-align: center; 
+}
+.div-main{
+    padding-top:100px; 
 }
