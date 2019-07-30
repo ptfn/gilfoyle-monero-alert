@@ -7,7 +7,8 @@ audio{
 }
 
 body{
-    background:#000000; 
+    background: url(img/img-1.jpg);
+    background-repeat: repeat; 
 }
 .h1-1{
     font-size: 80px;
@@ -22,5 +23,6 @@ body{
     text-align: center; 
 }
 .div-main{
-    padding-top:100px; 
+    margin-top:150px;
+    background:#000000;
 }
