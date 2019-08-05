@@ -18,6 +18,7 @@
         <p class="p1-1">
             Respect Gilfoyle)
         </p>
+        <p id="p1" class="p1-1"></p>
     </div>
     <audio src="baaah.mp3" controls id="audio-1"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
@@ -27,6 +28,7 @@
                 url: "https://api.cryptonator.com/api/ticker/xmr-usd",
                 success: function(data){
                     var change=data.ticker.change;
+                        document.getElementById("p1").innerHTML = data.chetotam.price;
                     if (change<0){
                         document.getElementById("audio-1").play();
                         console.log(data);
