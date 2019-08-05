@@ -28,7 +28,7 @@
                 url: "https://api.cryptonator.com/api/ticker/xmr-usd",
                 success: function(data){
                     var change=data.ticker.change;
-                        document.getElementById("p1").innerHTML = data.ticker.price;
+                    document.getElementById("p1").innerHTML = data.ticker.price;
                     if (change<0){
                         document.getElementById("audio-1").play();
                         console.log(data);
