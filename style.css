@@ -7,7 +7,7 @@ html {
     height: 100%;
 }
 
-audio{
+audio {
     display: none;
 }
 
@@ -21,21 +21,21 @@ body{
     height: 100%;
 }
 
-.h1-1{
+.h1-1 {
     font-size: 80px;
     color: #FFFFFF;
     font-family: BadMofo,sans-serif;
     text-align: center;
 }
 
-.p1-1{
+.p1-1 {
     font-size: 40px;
     color: #FFFFFF;
     font-family: BadMofo,sans-serif;
-    text-align: center; 
+    text-align: center;
 }
 
-.div-main{
+.div-main {
     background: rgba(0,0,0,.6);
     border-radius: 50px;
     padding: 5px;
