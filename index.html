@@ -19,18 +19,18 @@
             Respect Gilfoyle
         </p>
         <h1 class="h1-1">Price</h1>
-        <p id="p1" class="p1-1"></p>
+        <p id="p1" class="p1-2"></p>
     </div>
     <audio src="baaah.mp3" controls id="audio-1"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         function interval(){
             $.ajax({
-                url: "https://api.cryptonator.com/api/ticker/xmr-usd",
+                url: "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd",
                 success: function(data){
-                    var change=data.ticker.change;
-                    document.getElementById("p1").innerHTML = data.ticker.price;
-                    if (change<0){
+                    var change=data.monero.usd;
+                    document.getElementById("p1").innerHTML = change;
+                    if (change < 200){
                         document.getElementById("audio-1").play();
                         console.log(data);
                     }    

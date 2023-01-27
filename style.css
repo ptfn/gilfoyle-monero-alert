@@ -35,6 +35,13 @@ body{
     text-align: center;
 }
 
+.p1-2 {
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: BadMofo,sans-serif;
+    text-align: center;
+}
+
 .div-main {
     background: rgba(0,0,0,.6);
     border-radius: 50px;
