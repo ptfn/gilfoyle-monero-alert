@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <title>Gilfoyle Monero Alert</title>
 </head>
+
 <body>
-    <div class="div-main">
-        <h1 class="h1-1">
-            Gilfoyle Monero Alert
-        </h1>
-        <p class="p1-1"> 
-            The site checks the course of the monero, and if the course starts to fall, then an alert with the sound from the song "You Suffer" - Napalm Death.
+    <main>
+        <h1>Gilfoyle Monero Alert</h1>
+        <p class="text">
+            The site checks the course of the monero, and if the course starts to fall, then an alert with the sound
+            from the song "You Suffer" - Napalm Death.
         </p>
-        <p class="p1-1">
-            Respect Gilfoyle
-        </p>
-        <h1 class="h1-1">Price</h1>
-        <p id="p1" class="p1-2"></p>
-    </div>
-    <audio src="baaah.mp3" controls id="audio-1"></audio>
+        <p class="text">Respect Gilfoyle</p>
+        <h1>Price</h1>
+        <p id="price" class="price"></p>
+    </main>
+    <audio src="baaah.mp3" controls id="baaah"></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        function interval(){
+        function interval() {
             $.ajax({
                 url: "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd",
-                success: function(data){
-                    var change=data.monero.usd;
-                    document.getElementById("p1").innerHTML = change;
-                    if (change < 200){
-                        document.getElementById("audio-1").play();
+                success: function (data) {
+                    var change = data.monero.usd;
+                    document.getElementById("price").innerHTML = change;
+                    if (change < 200) {
+                        document.getElementById("baaah").play();
                         console.log(data);
-                    }    
+                    }
                 }
             });
         }
 
-        setInterval(interval,30000);
-    </script>   
+        setInterval(interval, 30000);
+    </script>
 </body>
+
 </html>
